@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://iframe.chat/scripts/main.min.js"
+      class="center"
+    ></script>
+    <script>
+      chattable.initialize({
+        theme: "Bytechat",
+      });
+    </script>
+    <link rel="icon" href="icon.png" type="image/png" />
+  </head>
+      <style>
+      .counter {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .top1 {
+        width: 520px;
+        height: 20px;
+        border-radius: 2px;
+        border: 5px solid purple;
+        background-color: magenta;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+      }
+
+      .top2 {
+        width: 265px;
+        height: 40px;
+        border-radius: 2px;
+        border: 5px solid black;
+        background-color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+      }
+
+      .blinkie {
+        width: 1055px;
+        height: 20px;
+      }
+
+      .scroll-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .scroll-content {
+        display: inline-block;
+        animation: scroll 6s linear infinite;
+      }
+
+      .scroll-content2 {
+        display: inline-block;
+        animation: scroll 25s linear infinite;
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .com {
+        display: block;
+        margin: auto;
+      }
+
+      body {
+        background-image: url("images/ssky.gif");
+      }
+
+      p {
+        color: #ffffff;
+      }
+      a {
+        color: #ffffff;
+      }
+      ul {
+        color: #ffffff;
+      }
+      li {
+        color: #ffffff;
+      }
+      h1 {
+        color: #ffffff;
+      }
+
+      @font-face {
+        font-family: "Lf";
+        src: url("fonts/windows-xp-tahoma.otf.woff2") format("woff");
+      }
+
+      body {
+        font-family: "Lf", sans-serif;
+      }
+
+      .box {
+        background-image: url("images/purpsky2.gif");
+        background-color: rgba(40, 74, 79, 0.1);
+        width: 1060px;
+        height: 850px;
+        border: 8px dotted white;
+        border-radius: 8px;
+        overflow: auto;
+        padding: 10px;
+      }
+
+      .center {
+        margin: auto;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: 475px, 150px, 170px;
+        grid-template-rows: 100px, 175px, 180px, 200px, 100px;
+        gap: 10px;
+      }
+
+      .div1 {
+        grid-column: span 3 / span 3;
+      }
+
+      .div2 {
+        grid-row-start: 2;
+        background-color: indigo;
+        width: 530px;
+        height: 225px;
+        border: 10px double purple;
+        overflow: hidden;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      .div3 {
+        grid-row-start: 2;
+        border: 10px solid white;
+        background-color: grey;
+        width: 271px;
+        height: 225px;
+        border-radius: 6px;
+        padding: 5px;
+      }
+
+      .div4 {
+        grid-column: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        border: 10px solid green;
+        width: 850px;
+        height: 180px;
+        border-radius: 2px;
+      }
+
+      .div5 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        border: 10px solid red;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+      }
+
+      .div6 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+      }
+
+      .div7 {
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+        grid-row-start: 2;
+        border-image-slice: 500 150 270 150;
+        border-image-width: 50px 20px 50px 20px;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: stretch stretch;
+        border-image-source: url("images/teeththing.png");
+        border-style: solid;
+        background-color: black;
+        width: 180px;
+        height: 690px;
+      }
+
+      .div8 {
+        grid-column: span 3 / span 3;
+        grid-row-start: 5;
+      }
+    </style>
+  <body>
+    <div class="box ; bgimg; center">
+      <div class="parent">
+        <div class="div1">
+          <a href="index.html"
+            ><img src="images/TheoSite.png" class="com"
+          /></a>
+        </div>
+
+        <div class="div2">
+          <div class="top1"><h1 style="font-size: 20">ABOUT THEOSITE</h1></div>
+          <p style="font-size: 24px">
+            welcome to my theosite. i talk about things that i like in here i
+            plan on making this some kind of online diary so i can just write
+            down the things i think of<br />current mood is
+            <a href="https://www.imood.com/users/theo"
+              ><img
+                src="https://moods.imood.com/display/uname-theo/fg-ffffff/bg-301395/imood.gif"
+                alt="The current mood of theo at www.imood.com"
+                border="0"
+            /></a>
+          </p>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <img src="images/stupidcat.gif" width="130" height="75" />
+              <img src="images/jibdance.gif" width="130" height="75" />
+              <img src="images/meandwho.gif" width="130" height="75" />
+              <img src="images/lain.gif" width="130" height="75" />
+              <img src="images/end.gif" width="130" height="75" />
+              <img src="images/summoning.gif" width="130" height="75" />
+              <img src="images/lain2.gif" width="130" height="75" />
+              <img src="images/twewy1.gif" width="130" height="75" />
+              <img src="images/jibanyan3.gif" width="130" height="75" />
+              <img src="images/opening.gif" width="130" height="75" />
+
+              <img src="images/stupidcat.gif" width="130" height="75" />
+              <img src="images/jibdance.gif" width="130" height="75" />
+              <img src="images/meandwho.gif" width="130" height="75" />
+              <img src="images/lain.gif" width="130" height="75" />
+              <img src="images/end.gif" width="130" height="75" />
+              <img src="images/summoning.gif" width="130" height="75" />
+              <img src="images/lain2.gif" width="130" height="75" />
+              <img src="images/twewy1.gif" width="130" height="75" />
+              <img src="images/jibanyan3.gif" width="130" height="75" />
+              <img src="images/opening.gif" width="130" height="75" />
+            </div>
+          </div>
+        </div>
+        <div class="div3">
+          <div class="top2">
+            <h1 style="color: black">OTHER LINKS</h1>
+            <p></p>
+          </div>
+
+          <h1>
+            <a href="index.html">straw.page </a><br /><a
+              href="https://www.last.fm/user/theo"
+              >last.fm</a
+            ><br /><a href="https://x.com/theo">twitter</a><br /><a
+              href="https://www.tumblr.com/theo"
+              >tumblr</a
+            ><br /><a href="https://www.instagram.com/theo/">instagram</a>
+          </h1>
+        </div>
+        <div class="div4">
+          <iframe
+            src="https://iframe.chat/embed?chat=theosite"
+            id="chattable"
+            width="100%"
+            height="180"
+            allowtransparency="yes"
+            allow="autoplay"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="auto"
+          ></iframe>
+        </div>
+        <div class="div5">
+          <iframe
+            class="iframe-right"
+            src="https://www.ballix.net/whatsplaying/widget?user=theo"
+            width="100%"
+            height="200"
+          ></iframe>
+        </div>
+        <div class="div6">7</div>
+        <div class="div7">
+          <h1 style="text-align: center; font-size: 29px">
+            <br />OTHER PAGES<br /><br />
+            <a href="diary.html"><s>DIARY</s> BLOG.</a><br /><br /><a
+              href="aboutme.html"
+              >ABOUT ME</a
+            ><br /><br />
+            <a href="page2.html">THEO JR</a>
+          </h1>
+        </div>
+        <div class="div8">
+          <div class="blinkie">
+            <div class="scroll-container">
+              <div class="scroll-content2">
+                <img
+                  src="images/blinkies/wobbles.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/tama.gif" width="150" height="20" />
+                <img src="images/blinkies/load.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/htmltags.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/BTDWAF.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/pacman.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/bastard.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/sp.gif" width="150" height="20" />
+                <img src="images/blinkies/tard.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/JIBANYAN.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/posthumous.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/boringalert.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/purplerules.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/nosybastard.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/coffee.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/online.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/bunny.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/shinji.gif"
+                  width="150"
+                  height="20"
+                />
+
+                <img
+                  src="images/blinkies/wobbles.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/tama.gif" width="150" height="20" />
+                <img src="images/blinkies/load.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/htmltags.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/BTDWAF.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/pacman.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/bastard.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/sp.gif" width="150" height="20" />
+                <img src="images/blinkies/tard.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/JIBANYAN.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/posthumous.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/boringalert.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/purplerules.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/nosybastard.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/coffee.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/online.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/bunny.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/shinji.gif"
+                  width="150"
+                  height="20"
+                />
+              </div>
+            </div>
+
+            <div class="scroll-container">
+              <div class="scroll-content2">
+                <img src="images/blinkies/poke.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/koolaid.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/stop.gif" width="150" height="20" />
+                <img src="images/blinkies/oh.gif" width="150" height="20" />
+                <img src="images/blinkies/smith.gif" width="150" height="20" />
+                <img src="images/blinkies/tboi.gif" width="150" height="20" />
+                <img src="images/blinkies/athf.gif" width="150" height="20" />
+                <img src="images/blinkies/vwnhu.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/haveaday.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/meatwad.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/terry.gif" width="150" height="20" />
+                <img src="images/blinkies/geek.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/wohmyg.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/dothedew.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/cats.gif" width="150" height="20" />
+                <img src="images/blinkies/life.gif" width="150" height="20" />
+                <img src="images/blinkies/lol.gif" width="150" height="20" />
+                <img src="images/blinkies/asuka.gif" width="150" height="20" />
+
+                <img src="images/blinkies/poke.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/koolaid.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/stop.gif" width="150" height="20" />
+                <img src="images/blinkies/oh.gif" width="150" height="20" />
+                <img src="images/blinkies/smith.gif" width="150" height="20" />
+                <img src="images/blinkies/tboi.gif" width="150" height="20" />
+                <img src="images/blinkies/athf.gif" width="150" height="20" />
+                <img src="images/blinkies/vwnhu.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/haveaday.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/meatwad.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/terry.gif" width="150" height="20" />
+                <img src="images/blinkies/geek.gif" width="150" height="20" />
+                <img
+                  src="images/blinkies/wohmyg.gif"
+                  width="150"
+                  height="20"
+                />
+                <img
+                  src="images/blinkies/dothedew.gif"
+                  width="150"
+                  height="20"
+                />
+                <img src="images/blinkies/cats.gif" width="150" height="20" />
+                <img src="images/blinkies/life.gif" width="150" height="20" />
+                <img src="images/blinkies/lol.gif" width="150" height="20" />
+                <img src="images/blinkies/asuka.gif" width="150" height="20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center">
+      you are
+      <script
+        language="javascript"
+        type="text/javascript"
+        src="https://counter1.fc2.com/counter.php?id=40612951&main=1"
+      ></script>
+      <noscript
+        ><img src="https://counter1.fc2.com/counter_img.php?id=40612951&main=1"
+      /></noscript>
+      visitor to this bad site
+    </p>
+  </body>
+</html>
+<!--test-->
